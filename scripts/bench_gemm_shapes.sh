@@ -69,69 +69,7 @@ run_bench() {
     " > "$out" 2>&1
 }
 
-parse_results() {
-  local old_l="$1" new_l="$2" rdir="$3"
-  OLD_L="$old_l" NEW_L="$new_l" RDIR="$rdir" python3 << 'PYEOF'
-import os
-
-models = ['Llama-3.1-8B', 'Llama-3.1-70B', 'Llama-2-70B', 'DeepSeek-V2-lite', 'Mixtral-8x22B-proxy']
-old_label = os.environ['OLD_L']
-new_label = os.environ['NEW_L']
-results_dir = os.environ['RDIR']
-
-def parse_bench(filepath):
-    results = []
-    with open(filepath) as f:
-        for line in f:
-            s = line.strip()
-            if s and s[0] in 'TN' and ',' in s:
-                parts = [p.strip() for p in s.split(',')]
-                if len(parts) >= 39:
-                    results.append({
-                        'transA': parts[0], 'transB': parts[1],
-                        'm': int(parts[4]), 'n': int(parts[5]), 'k': int(parts[6]),
-                        'gflops': float(parts[36]),
-                        'us': float(parts[38]),
-                    })
-    return results
-
-hdr = "{:<24s} {:<35s} {:>12s} {:>12s} {:>8s}".format(
-    'Model', 'Shape (trans,M,N,K)', 'Old TFLOPS', 'New TFLOPS', 'Delta%')
-print(hdr)
-print('-' * len(hdr))
-
-for model in models:
-    old_file = os.path.join(results_dir, "bench_{}_{}.csv".format(model, old_label))
-    new_file = os.path.join(results_dir, "bench_{}_{}.csv".format(model, new_label))
-    if not os.path.exists(old_file) or not os.path.exists(new_file):
-        print("{:<24s} (missing results)".format(model))
-        continue
-    old_results = parse_bench(old_file)
-    new_results = parse_bench(new_file)
-    if not old_results and not new_results:
-        print("{:<24s} (no benchmark data)".format(model))
-        continue
-
-    old_map = {(r['transA'], r['transB'], r['m'], r['n'], r['k']): r for r in old_results}
-    new_map = {(r['transA'], r['transB'], r['m'], r['n'], r['k']): r for r in new_results}
-    all_keys = sorted(set(old_map.keys()) | set(new_map.keys()), key=lambda x: (x[2], x[3], x[4]))
-
-    for i, key in enumerate(all_keys):
-        old_r = old_map.get(key)
-        new_r = new_map.get(key)
-        old_tf = old_r['gflops'] / 1000 if old_r else 0
-        new_tf = new_r['gflops'] / 1000 if new_r else 0
-        if old_tf > 0:
-            delta = (new_tf - old_tf) / old_tf * 100
-        else:
-            delta = float('inf')
-        shape = "{},{} M={} N={} K={}".format(key[0], key[1], key[2], key[3], key[4])
-        mcol = model if i == 0 else ''
-        print("{:<24s} {:<35s} {:>10.1f}T {:>10.1f}T {:>+7.1f}%".format(
-            mcol, shape, old_tf, new_tf, delta))
-    print()
-PYEOF
-}
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 echo "=============================================="
 echo " hipBLASLt Benchmark Comparison"
@@ -169,7 +107,7 @@ done
 echo ""
 echo "[STEP 3] Comparing results..."
 echo ""
-parse_results "$OLD_LABEL" "$NEW_LABEL" "$RESULTS_DIR"
+bash "$SCRIPT_DIR/parse_bench_results.sh" "$RESULTS_DIR" "$OLD_LABEL" "$NEW_LABEL"
 
 echo ""
 echo "=============================================="
