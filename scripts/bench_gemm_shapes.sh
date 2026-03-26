@@ -70,13 +70,14 @@ run_bench() {
 }
 
 parse_results() {
-  python3 << 'PYEOF'
-import os, sys
+  local old_l="$1" new_l="$2" rdir="$3"
+  OLD_L="$old_l" NEW_L="$new_l" RDIR="$rdir" python3 << 'PYEOF'
+import os
 
 models = ['Llama-3.1-8B', 'Llama-3.1-70B', 'Llama-2-70B', 'DeepSeek-V2-lite', 'Mixtral-8x22B-proxy']
-old_label = sys.argv[1]
-new_label = sys.argv[2]
-results_dir = sys.argv[3]
+old_label = os.environ['OLD_L']
+new_label = os.environ['NEW_L']
+results_dir = os.environ['RDIR']
 
 def parse_bench(filepath):
     results = []
