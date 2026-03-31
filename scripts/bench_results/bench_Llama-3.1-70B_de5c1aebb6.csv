@@ -5,71 +5,71 @@ Selecting previously unselected package python3-yaml.
 Preparing to unpack .../python3-yaml_5.4.1-1ubuntu1_amd64.deb ...
 Unpacking python3-yaml (5.4.1-1ubuntu1) ...
 Setting up python3-yaml (5.4.1-1ubuntu1) ...
-/opt/rocm-7.1.0/bin/hipblaslt_gentest.py --template /opt/rocm-7.1.0/bin/hipblaslt_template.yaml -o /tmp/hipblaslt-ZGUOAr /shapes/gemm_shapes_Llama-3.1-70B.yaml
+/opt/rocm-7.1.0/bin/hipblaslt_gentest.py --template /opt/rocm-7.1.0/bin/hipblaslt_template.yaml -o /tmp/hipblaslt-8sTaqJ /shapes/gemm_shapes_Llama-3.1-70B.yaml
 hipBLASLt version: 100100
 hipBLASLt git version: de5c1aebb6
 Query device success: there are 8 devices. (Target device ID is 0)
-Device ID 0 : AMD Instinct MI350X gfx950:sramecc+:xnack-
-with 270.6 GB memory, max. SCLK 2200 MHz, max. MCLK 1900 MHz, compute capability 9.5
+Device ID 0 : AMD Instinct MI355X gfx950:sramecc+:xnack-
+with 309.2 GB memory, max. SCLK 2400 MHz, max. MCLK 1900 MHz, compute capability 9.5
 maxGridDimX 2147483647, sharedMemPerBlock 163.8 KB, maxThreadsPerBlock 1024, warpSize 64
 
 Rotating buffer 512 MiB. Needed Size: 1312 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    T,N,0,1,10240,32768,8192,1,8192,83886080,0,8192,268435456,10240,335544320,10240,335544320,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.25016e+06,291.36,4397.48
+    T,N,0,1,10240,32768,8192,1,8192,83886080,0,8192,268435456,10240,335544320,10240,335544320,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.60155e+06,373.255,3432.64
 Rotating buffer 512 MiB. Needed Size: 10532 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    T,N,0,1,128256,32768,8192,1,8192,1050673152,0,8192,268435456,128256,4202692608,128256,4202692608,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.23087e+06,183.855,55941.8
+    T,N,0,1,128256,32768,8192,1,8192,1050673152,0,8192,268435456,128256,4202692608,128256,4202692608,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.56282e+06,233.438,44059.4
 Rotating buffer 512 MiB. Needed Size: 2752 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,N,0,1,28672,32768,8192,1,28672,234881024,0,8192,268435456,28672,939524096,28672,939524096,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.19541e+06,208.708,12876.9
+    N,N,0,1,28672,32768,8192,1,28672,234881024,0,8192,268435456,28672,939524096,28672,939524096,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.51908e+06,265.216,10133.2
 Rotating buffer 512 MiB. Needed Size: 2752 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,T,0,1,28672,8192,32768,1,28672,939524096,0,8192,268435456,28672,234881024,28672,234881024,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.20785e+06,210.878,12744.3
+    N,T,0,1,28672,8192,32768,1,28672,939524096,0,8192,268435456,28672,234881024,28672,234881024,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.58662e+06,277.008,9701.88
 Rotating buffer 512 MiB. Needed Size: 4992 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    T,N,0,1,57344,32768,8192,1,8192,469762048,0,8192,268435456,57344,1879048192,57344,1879048192,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.23636e+06,195.778,24900.7
+    T,N,0,1,57344,32768,8192,1,8192,469762048,0,8192,268435456,57344,1879048192,57344,1879048192,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.56339e+06,247.563,19692
 Rotating buffer 512 MiB. Needed Size: 1312 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,T,0,1,8192,10240,32768,1,8192,268435456,0,10240,335544320,8192,83886080,8192,83886080,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.22171e+06,284.73,4499.87
+    N,T,0,1,8192,10240,32768,1,8192,268435456,0,10240,335544320,8192,83886080,8192,83886080,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.58184e+06,368.661,3475.41
 Rotating buffer 512 MiB. Needed Size: 10532 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,T,0,1,8192,128256,32768,1,8192,268435456,0,128256,4202692608,8192,1050673152,8192,1050673152,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.16839e+06,174.523,58933
+    N,T,0,1,8192,128256,32768,1,8192,268435456,0,128256,4202692608,8192,1050673152,8192,1050673152,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.5756e+06,235.348,43701.9
 Rotating buffer 512 MiB. Needed Size: 1312 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,N,0,1,8192,32768,10240,1,8192,83886080,0,10240,335544320,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.23369e+06,287.521,4456.2
+    N,N,0,1,8192,32768,10240,1,8192,83886080,0,10240,335544320,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.59886e+06,372.627,3438.42
 Rotating buffer 512 MiB. Needed Size: 10532 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,N,0,1,8192,32768,128256,1,8192,1050673152,0,128256,4202692608,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.15326e+06,172.262,59706.5
+    N,N,0,1,8192,32768,128256,1,8192,1050673152,0,128256,4202692608,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.55808e+06,232.73,44193.6
 Rotating buffer 512 MiB. Needed Size: 2752 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    T,N,0,1,8192,32768,28672,1,28672,234881024,0,28672,939524096,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.23563e+06,215.729,12457.8
+    T,N,0,1,8192,32768,28672,1,28672,234881024,0,28672,939524096,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.59176e+06,277.906,9670.54
 Rotating buffer 512 MiB. Needed Size: 4992 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,N,0,1,8192,32768,57344,1,8192,469762048,0,57344,1879048192,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.17068e+06,185.377,26297.8
+    N,N,0,1,8192,32768,57344,1,8192,469762048,0,57344,1879048192,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.56316e+06,247.526,19694.9
 Rotating buffer 512 MiB. Needed Size: 1152 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,N,0,1,8192,32768,8192,1,8192,67108864,0,8192,268435456,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.21338e+06,310.377,3624.62
+    N,N,0,1,8192,32768,8192,1,8192,67108864,0,8192,268435456,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.55056e+06,396.627,2836.42
 Rotating buffer 512 MiB. Needed Size: 1152 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    T,N,0,1,8192,32768,8192,1,8192,67108864,0,8192,268435456,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.26047e+06,322.424,3489.2
+    T,N,0,1,8192,32768,8192,1,8192,67108864,0,8192,268435456,8192,268435456,8192,268435456,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.61761e+06,413.776,2718.86
 Rotating buffer 512 MiB. Needed Size: 4992 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,T,0,1,8192,57344,32768,1,8192,268435456,0,57344,1879048192,8192,469762048,8192,469762048,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.19334e+06,188.964,25798.5
+    N,T,0,1,8192,57344,32768,1,8192,268435456,0,57344,1879048192,8192,469762048,8192,469762048,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.58815e+06,251.484,19385
 Rotating buffer 512 MiB. Needed Size: 1152 MiB. Needed block count: 1 (Capped to max iters: 1000)
 Is supported 1 / Total solutions: 1
 [0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
-    N,T,0,1,8192,8192,32768,1,8192,268435456,0,8192,268435456,8192,67108864,8192,67108864,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.23154e+06,315.023,3571.17
+    N,T,0,1,8192,8192,32768,1,8192,268435456,0,8192,268435456,8192,67108864,8192,67108864,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.59577e+06,408.19,2756.07
