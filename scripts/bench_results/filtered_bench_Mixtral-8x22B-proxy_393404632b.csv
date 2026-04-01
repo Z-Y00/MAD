@@ -1,0 +1,48 @@
+W: GPG error: https://repo.radeon.com/amdainic/pensando/ubuntu/1.117.5-a-38 noble InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 9386B48A1A693C5C
+W: The repository 'https://repo.radeon.com/amdainic/pensando/ubuntu/1.117.5-a-38 noble InRelease' is not signed.
+Selecting previously unselected package python3-yaml.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 115575 files and directories currently installed.)
+Preparing to unpack .../python3-yaml_6.0.1-2build2_amd64.deb ...
+Unpacking python3-yaml (6.0.1-2build2) ...
+Setting up python3-yaml (6.0.1-2build2) ...
+/opt/rocm-7.2.0/bin/hipblaslt_gentest.py --template /opt/rocm-7.2.0/bin/hipblaslt_template.yaml -o /tmp/hipblaslt-EqZ9i8 /shapes/gemm_shapes_Mixtral-8x22B-proxy.yaml
+hipBLASLt version: 100202
+hipBLASLt git version: 393404632b
+Query device success: there are 8 devices. (Target device ID is 0)
+Device ID 0 : AMD Instinct MI355X gfx950:sramecc+:xnack-
+with 309.2 GB memory, max. SCLK 2400 MHz, max. MCLK 1900 MHz, compute capability 9.5
+maxGridDimX 2147483647, sharedMemPerBlock 163.8 KB, maxThreadsPerBlock 1024, warpSize 64
+
+Rotating buffer 512 MiB. Needed Size: 1567 MiB. Needed block count: 1 (Capped to max iters: 1000)
+Is supported 1 / Total solutions: 1
+[0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
+    T,N,0,1,32000,16384,6144,1,6144,196608000,0,6144,100663296,32000,524288000,32000,524288000,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.45894e+06,346.542,4415.84
+Rotating buffer 512 MiB. Needed Size: 2816 MiB. Needed block count: 1 (Capped to max iters: 1000)
+Is supported 1 / Total solutions: 1
+[0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
+    T,N,0,1,32768,32768,6144,1,6144,201326592,0,6144,201326592,32768,1073741824,32768,1073741824,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.46983e+06,306.351,8976.62
+Rotating buffer 512 MiB. Needed Size: 1567 MiB. Needed block count: 1 (Capped to max iters: 1000)
+Is supported 1 / Total solutions: 1
+[0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
+    N,T,0,1,6144,32000,16384,1,6144,100663296,0,32000,524288000,6144,196608000,6144,196608000,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.47283e+06,349.84,4374.2

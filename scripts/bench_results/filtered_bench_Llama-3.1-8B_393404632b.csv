@@ -1,0 +1,250 @@
+Unable to find image 'rocm/mad-private:primus_ci_c313e0c_20260318' locally
+primus_ci_c313e0c_20260318: Pulling from rocm/mad-private
+817807f3c64e: Pulling fs layer
+63cdebafc037: Pulling fs layer
+fbcad5353bd5: Pulling fs layer
+7aca82ab79d6: Pulling fs layer
+dfc556f419de: Pulling fs layer
+c364fd2b5fbf: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+81116a93ba8d: Pulling fs layer
+5492e5f8802e: Pulling fs layer
+b22fa4e09bc1: Pulling fs layer
+4dc0a2d9c3b3: Pulling fs layer
+d52e92952416: Pulling fs layer
+7aca82ab79d6: Waiting
+dfc556f419de: Waiting
+159beac7f964: Pulling fs layer
+e1eeafb4c0e2: Pulling fs layer
+3f384cb1cddd: Pulling fs layer
+c364fd2b5fbf: Waiting
+bcace483cb53: Pulling fs layer
+f752c311ff21: Pulling fs layer
+1b958cd584c1: Pulling fs layer
+4f4fb700ef54: Waiting
+c0a4a751c441: Pulling fs layer
+0c1243a9944a: Pulling fs layer
+29458813c14a: Pulling fs layer
+ab1598a5e423: Pulling fs layer
+81116a93ba8d: Waiting
+2ae6b3bd1c82: Pulling fs layer
+b25635b3d16c: Pulling fs layer
+dcd530f86d29: Pulling fs layer
+d52e92952416: Waiting
+51c2540330f8: Pulling fs layer
+5492e5f8802e: Waiting
+e1eeafb4c0e2: Waiting
+3901fa5fbe8e: Pulling fs layer
+25e41677ef7b: Pulling fs layer
+b22fa4e09bc1: Waiting
+2ea1632d204a: Pulling fs layer
+4dc0a2d9c3b3: Waiting
+1b958cd584c1: Waiting
+83873feb48fb: Pulling fs layer
+f752c311ff21: Waiting
+88d0280a0917: Pulling fs layer
+c0a4a751c441: Waiting
+905dd1f921c3: Pulling fs layer
+29458813c14a: Waiting
+159beac7f964: Waiting
+c9ad6200f9ed: Pulling fs layer
+2ae6b3bd1c82: Waiting
+ab1598a5e423: Waiting
+b25635b3d16c: Waiting
+d50d6e9397b2: Pulling fs layer
+a745fd3fd44c: Pulling fs layer
+bcace483cb53: Waiting
+0c1243a9944a: Waiting
+3901fa5fbe8e: Waiting
+905dd1f921c3: Waiting
+25e41677ef7b: Waiting
+0e77ec9a9d50: Pulling fs layer
+23d81f1d1bd1: Pulling fs layer
+51c2540330f8: Waiting
+06ceffef2e9a: Pulling fs layer
+2ea1632d204a: Waiting
+f3e6a412cd78: Pulling fs layer
+c9ad6200f9ed: Waiting
+88d0280a0917: Waiting
+7af1af8a106e: Pulling fs layer
+a745fd3fd44c: Waiting
+1718c64a7667: Pulling fs layer
+f3e6a412cd78: Waiting
+aaf89eb604ac: Pulling fs layer
+328863474017: Pulling fs layer
+06ceffef2e9a: Waiting
+1718c64a7667: Waiting
+aa62bbd29410: Pulling fs layer
+467f94882451: Pulling fs layer
+328863474017: Waiting
+aa62bbd29410: Waiting
+467f94882451: Waiting
+817807f3c64e: Verifying Checksum
+817807f3c64e: Download complete
+7aca82ab79d6: Verifying Checksum
+7aca82ab79d6: Download complete
+dfc556f419de: Verifying Checksum
+dfc556f419de: Download complete
+817807f3c64e: Pull complete
+c364fd2b5fbf: Verifying Checksum
+c364fd2b5fbf: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+81116a93ba8d: Verifying Checksum
+81116a93ba8d: Download complete
+5492e5f8802e: Verifying Checksum
+5492e5f8802e: Download complete
+63cdebafc037: Verifying Checksum
+63cdebafc037: Download complete
+4dc0a2d9c3b3: Verifying Checksum
+4dc0a2d9c3b3: Download complete
+b22fa4e09bc1: Verifying Checksum
+b22fa4e09bc1: Download complete
+d52e92952416: Verifying Checksum
+d52e92952416: Download complete
+159beac7f964: Download complete
+3f384cb1cddd: Download complete
+bcace483cb53: Verifying Checksum
+bcace483cb53: Download complete
+f752c311ff21: Verifying Checksum
+f752c311ff21: Download complete
+1b958cd584c1: Verifying Checksum
+1b958cd584c1: Download complete
+c0a4a751c441: Verifying Checksum
+c0a4a751c441: Download complete
+63cdebafc037: Pull complete
+e1eeafb4c0e2: Verifying Checksum
+e1eeafb4c0e2: Download complete
+0c1243a9944a: Verifying Checksum
+0c1243a9944a: Download complete
+ab1598a5e423: Verifying Checksum
+ab1598a5e423: Download complete
+2ae6b3bd1c82: Download complete
+b25635b3d16c: Verifying Checksum
+b25635b3d16c: Download complete
+dcd530f86d29: Verifying Checksum
+dcd530f86d29: Download complete
+51c2540330f8: Verifying Checksum
+51c2540330f8: Download complete
+3901fa5fbe8e: Verifying Checksum
+3901fa5fbe8e: Download complete
+25e41677ef7b: Verifying Checksum
+25e41677ef7b: Download complete
+2ea1632d204a: Verifying Checksum
+2ea1632d204a: Download complete
+83873feb48fb: Verifying Checksum
+83873feb48fb: Download complete
+88d0280a0917: Verifying Checksum
+88d0280a0917: Download complete
+905dd1f921c3: Verifying Checksum
+905dd1f921c3: Download complete
+c9ad6200f9ed: Verifying Checksum
+c9ad6200f9ed: Download complete
+d50d6e9397b2: Verifying Checksum
+d50d6e9397b2: Download complete
+29458813c14a: Verifying Checksum
+29458813c14a: Download complete
+0e77ec9a9d50: Verifying Checksum
+0e77ec9a9d50: Download complete
+23d81f1d1bd1: Download complete
+06ceffef2e9a: Verifying Checksum
+06ceffef2e9a: Download complete
+f3e6a412cd78: Verifying Checksum
+f3e6a412cd78: Download complete
+7af1af8a106e: Verifying Checksum
+7af1af8a106e: Download complete
+1718c64a7667: Download complete
+aaf89eb604ac: Download complete
+328863474017: Verifying Checksum
+328863474017: Download complete
+aa62bbd29410: Download complete
+467f94882451: Download complete
+fbcad5353bd5: Verifying Checksum
+fbcad5353bd5: Download complete
+a745fd3fd44c: Verifying Checksum
+a745fd3fd44c: Download complete
+fbcad5353bd5: Pull complete
+7aca82ab79d6: Pull complete
+dfc556f419de: Pull complete
+c364fd2b5fbf: Pull complete
+4f4fb700ef54: Pull complete
+81116a93ba8d: Pull complete
+5492e5f8802e: Pull complete
+b22fa4e09bc1: Pull complete
+4dc0a2d9c3b3: Pull complete
+d52e92952416: Pull complete
+159beac7f964: Pull complete
+e1eeafb4c0e2: Pull complete
+3f384cb1cddd: Pull complete
+bcace483cb53: Pull complete
+f752c311ff21: Pull complete
+1b958cd584c1: Pull complete
+c0a4a751c441: Pull complete
+0c1243a9944a: Pull complete
+29458813c14a: Pull complete
+ab1598a5e423: Pull complete
+2ae6b3bd1c82: Pull complete
+b25635b3d16c: Pull complete
+dcd530f86d29: Pull complete
+51c2540330f8: Pull complete
+3901fa5fbe8e: Pull complete
+25e41677ef7b: Pull complete
+2ea1632d204a: Pull complete
+83873feb48fb: Pull complete
+88d0280a0917: Pull complete
+905dd1f921c3: Pull complete
+c9ad6200f9ed: Pull complete
+d50d6e9397b2: Pull complete
+a745fd3fd44c: Pull complete
+0e77ec9a9d50: Pull complete
+23d81f1d1bd1: Pull complete
+06ceffef2e9a: Pull complete
+f3e6a412cd78: Pull complete
+7af1af8a106e: Pull complete
+1718c64a7667: Pull complete
+aaf89eb604ac: Pull complete
+328863474017: Pull complete
+aa62bbd29410: Pull complete
+467f94882451: Pull complete
+Digest: sha256:843bc3686f3cc20208407b11b1e4393f368a64c5bbe1fd7deef2a70b2f7cbf78
+Status: Downloaded newer image for rocm/mad-private:primus_ci_c313e0c_20260318
+W: GPG error: https://repo.radeon.com/amdainic/pensando/ubuntu/1.117.5-a-38 noble InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 9386B48A1A693C5C
+W: The repository 'https://repo.radeon.com/amdainic/pensando/ubuntu/1.117.5-a-38 noble InRelease' is not signed.
+Selecting previously unselected package python3-yaml.
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 115575 files and directories currently installed.)
+Preparing to unpack .../python3-yaml_6.0.1-2build2_amd64.deb ...
+Unpacking python3-yaml (6.0.1-2build2) ...
+Setting up python3-yaml (6.0.1-2build2) ...
+/opt/rocm-7.2.0/bin/hipblaslt_gentest.py --template /opt/rocm-7.2.0/bin/hipblaslt_template.yaml -o /tmp/hipblaslt-8YMQZM /shapes/gemm_shapes_Llama-3.1-8B.yaml
+hipBLASLt version: 100202
+hipBLASLt git version: 393404632b
+Query device success: there are 8 devices. (Target device ID is 0)
+Device ID 0 : AMD Instinct MI355X gfx950:sramecc+:xnack-
+with 309.2 GB memory, max. SCLK 2400 MHz, max. MCLK 1900 MHz, compute capability 9.5
+maxGridDimX 2147483647, sharedMemPerBlock 163.8 KB, maxThreadsPerBlock 1024, warpSize 64
+
+Rotating buffer 512 MiB. Needed Size: 1264 MiB. Needed block count: 1 (Capped to max iters: 1000)
+Is supported 1 / Total solutions: 1
+[0]:transA,transB,grouped_gemm,batch_count,m,n,k,alpha,lda,stride_a,beta,ldb,stride_b,ldc,stride_c,ldd,stride_d,a_type,b_type,c_type,d_type,compute_type,scaleA,scaleB,scaleC,scaleD,amaxD,swizzle_a,swizzle_b,activation_type,bias_vector,bias_type,aux_type,rotating_buffer,flush,use_gpu_timer,hipblaslt-Gflops,hipblaslt-GB/s,us
+    N,T,0,1,14336,4096,32768,1,14336,469762048,0,4096,134217728,14336,58720256,14336,58720256,bf16_r,bf16_r,bf16_r,bf16_r,f32_r,0,0,0,0,0,0,0,none,0,f32_r,bf16_r,512,1,1,1.438e+06,461.252,2676.14
